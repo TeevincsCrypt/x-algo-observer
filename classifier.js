@@ -27,9 +27,11 @@ function classify() {
     state = "RED";
   }
 
-  document.getElementById("result").innerHTML = `
-    <strong>Distribution State:</strong> ${state}<br>
-    <strong>Early Velocity:</strong> ${velocity}<br>
-    <strong>Engagement Ratio:</strong> ${ratio.toFixed(3)}
-  `;
+  const resultEl = document.getElementById("result");
+resultEl.className = `result ${state}`;
+resultEl.innerHTML = `
+  <div class="state">${state}</div>
+  <div><strong>Early Velocity:</strong> ${velocity}</div>
+  <div><strong>Engagement Ratio:</strong> ${ratio.toFixed(3)}</div>
+`;
 }
