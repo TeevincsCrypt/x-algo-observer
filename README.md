@@ -43,3 +43,12 @@ DAILY LOOP
   Classify distribution state
   Detect regime shifts
   Adapt weighting model
+
+
+---
+
+## Future Web Dashboard (Planned)
+
+This project is intended to evolve into a web-based dashboard for observing and analyzing changes in X’s recommendation behavior over time.
+
+The dashboard will visualize patterns, early signals, and detected regime shifts based on logged post metrics.
