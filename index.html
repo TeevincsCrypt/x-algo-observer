@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>X Algo Observer — Classifier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      width: 100%;
+    }
+    .result {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>X Algo Observer</h1>
+  <p>Enter early post metrics to classify distribution behavior.</p>
+
+  <label>Impressions @ 5 min
+    <input id="i5" type="number">
+  </label>
+
+  <label>Impressions @ 15 min
+    <input id="i15" type="number">
+  </label>
+
+  <label>Impressions @ 30 min
+    <input id="i30" type="number">
+  </label>
+
+  <label>Likes
+    <input id="likes" type="number">
+  </label>
+
+  <label>Replies
+    <input id="replies" type="number">
+  </label>
+
+  <label>Reposts
+    <input id="reposts" type="number">
+  </label>
+
+  <button onclick="classify()">Classify</button>
+
+  <div class="result" id="result"></div>
+
+  <script src="classifier.js"></script>
+</body>
+</html>
